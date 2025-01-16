@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{colortbl}
+\usepackage{geometry}
+\usepackage{hhline}
+\usepackage[russian]{babel}
+
+
+
+% Определим цвета
+\definecolor{alkali}{RGB}{255, 205, 205}
+\definecolor{alkaline_earth}{RGB}{193, 234, 250}
+\definecolor{transition}{RGB}{200, 200, 255}
+\definecolor{post_transition}{RGB}{255, 255, 180}
+\definecolor{metalloid}{RGB}{255, 245, 204}
+\definecolor{nonmetal}{RGB}{240, 255, 240}
+\definecolor{halogen}{RGB}{204, 255, 204}
+\definecolor{noble_gas}{RGB}{255, 210, 210}
+
+\begin{document}
+
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1.5}
+    \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \multirow{2}{*}{\textbf{Периоды}} & \multirow{2}{*}{\textbf{Ряды}} & \multicolumn{10}{c|}{\textbf{Группы элементов}} \\
+        \cline{3-12}
+        \textbf{} & & \textbf{I} & \textbf{II} & \textbf{III} & \textbf{IV} & \textbf{V} & \textbf{VI} & \textbf{VII} & \textbf{VIII} & \textbf{IX} & \textbf{X} \\
+        \hline
+        \textbf{1} & \textbf{1} & \cellcolor{alkali}\textbf{H} & & & & & & & \cellcolor{noble_gas}\textbf{He} & & \\
+        \hline
+        \textbf{2} & \textbf{2} & \cellcolor{alkali}\textbf{Li} & \cellcolor{alkali}\textbf{Be} & \cellcolor{post_transition}\textbf{B} & \cellcolor{post_transition}\textbf{C} & \cellcolor{post_transition}\textbf{N} & \cellcolor{post_transition}\textbf{O} & \cellcolor{post_transition}\textbf{F} & \cellcolor{post_transition}\textbf{Ne} & & \\
+        \hline
+        \textbf{3} & \textbf{3} & \cellcolor{alkali}\textbf{Na} & \cellcolor{alkali}\textbf{Mg} & \cellcolor{post_transition}\textbf{Al} & \cellcolor{post_transition}\textbf{Si} & \cellcolor{post_transition}\textbf{P} & \cellcolor{post_transition}\textbf{S} & \cellcolor{post_transition}\textbf{Cl} & \cellcolor{post_transition}\textbf{Ar} & & \\
+        \hline
+        \multirow{2}{*}{\textbf{4}} & \textbf{4} & \cellcolor{alkali}\textbf{K} & \cellcolor{alkali}\textbf{Ca} & \cellcolor{alkaline_earth}\textbf{Sc} & \cellcolor{alkaline_earth}\textbf{Ti} & \cellcolor{alkaline_earth}\textbf{V} & \cellcolor{alkaline_earth}\textbf{Cr} & \cellcolor{alkaline_earth}\textbf{Mn} & \cellcolor{alkaline_earth}\textbf{Fe} & \cellcolor{alkaline_earth}\textbf{Co} & \cellcolor{alkaline_earth}\textbf{Ni} \\
+        \cline{2-12}
+        & \textbf{5} & \cellcolor{alkaline_earth}\textbf{Cu} & \cellcolor{alkaline_earth}\textbf{Zn} & \cellcolor{post_transition}\textbf{Ga} & \cellcolor{post_transition}\textbf{Ge} & \cellcolor{post_transition}\textbf{As} & \cellcolor{post_transition}\textbf{Se} & \cellcolor{post_transition}\textbf{Br} & \cellcolor{post_transition}\textbf{Kr} & & \\
+        \hline
+        \multirow{2}{*}{\textbf{5}} & \textbf{6} & \cellcolor{alkali}\textbf{Rb} & \cellcolor{alkali}\textbf{Sr} & \cellcolor{alkaline_earth}\textbf{Y} & \cellcolor{alkaline_earth}\textbf{Zr} & \cellcolor{alkaline_earth}\textbf{Nb} & \cellcolor{alkaline_earth}\textbf{Mo} & \cellcolor{alkaline_earth}\textbf{Tc} & \cellcolor{alkaline_earth}\textbf{Ru} & \cellcolor{alkaline_earth}\textbf{Rh} & \cellcolor{alkaline_earth}\textbf{Pd} \\
+        \cline{2-12}
+         & \textbf{7} & \cellcolor{alkaline_earth}\textbf{Ag} & \cellcolor{alkaline_earth}\textbf{Cd} & \cellcolor{post_transition}\textbf{In} & \cellcolor{post_transition}\textbf{Sn} & \cellcolor{post_transition}\textbf{Sb} & \cellcolor{post_transition}\textbf{Te} & \cellcolor{post_transition}\textbf{I} & \cellcolor{post_transition}\textbf{Xe} & & \\
+        \hline
+        \multirow{2}{*}{\textbf{6}} & \textbf{8} & \cellcolor{alkali}\textbf{Cs} & \cellcolor{alkali}\textbf{Ba} & \cellcolor{alkaline_earth}\textbf{La}* & \cellcolor{alkaline_earth}\textbf{Hf} & \cellcolor{alkaline_earth}\textbf{Ta} & \cellcolor{alkaline_earth}\textbf{W} & \cellcolor{alkaline_earth}\textbf{Re} & \cellcolor{alkaline_earth}\textbf{Os} & \cellcolor{alkaline_earth}\textbf{Ir} & \cellcolor{alkaline_earth}\textbf{Pt} \\
+        \cline{2-12}
+        & \textbf{9} & \cellcolor{alkaline_earth}\textbf{Au} & \cellcolor{alkaline_earth}\textbf{Hg} & \cellcolor{post_transition}\textbf{Tl} & \cellcolor{post_transition}\textbf{Pb} & \cellcolor{post_transition}\textbf{Bi} & \cellcolor{post_transition}\textbf{Po} & \cellcolor{post_transition}\textbf{At} & \cellcolor{post_transition}\textbf{Rn} & & \\
+        \hline
+        \textbf{7} & \textbf{10} & \cellcolor{alkali}\textbf{Fr} & \cellcolor{alkali}\textbf{Ra} & \cellcolor{alkaline_earth}\textbf{Ac}** & \cellcolor{alkaline_earth}\textbf{Rf} & \cellcolor{alkaline_earth}\textbf{Db} & \cellcolor{alkaline_earth}\textbf{Sg} & \cellcolor{alkaline_earth}\textbf{Bh} & \cellcolor{alkaline_earth}\textbf{Hs} & \cellcolor{alkaline_earth}\textbf{Mt} & \cellcolor{alkaline_earth} \\
+        \hline
+    \end{tabular}
+    \caption{Периодическая система химических элементов Д.И. Менделеева}
+\end{table}
+
+\end{document}
