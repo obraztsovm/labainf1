@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+message Schedule {
+  repeated Day date = 1;
+}
+
+message Day {
+  string date_full = 1;
+  string date_short = 2;
+  repeated Lesson Sheet = 3;
+}
+
+message Lesson {
+  string time = 1;
+  string weeks = 2;
+  string group = 3;
+  string place = 4;
+  string name = 5;
+  string format = 6;
+}
